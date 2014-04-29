@@ -1,7 +1,7 @@
 #ifndef _B2BTRANS_H_
 #define _B2BTRANS_H_
 
-#include "AmSession.h"
+#include "AmB2ABSession.h"
 
 class B2BTransFactory: public AmSessionFactory
 {
@@ -12,7 +12,7 @@ public:
   AmSession* onInvite(const AmSipRequest& req);
 };
 
-class B2BTransDialog : public AmSession
+class B2BTransDialog : public AmB2ABCallerSession
 {
     
 public:
